@@ -105,7 +105,7 @@ li a {
 }
 
 li a:hover {
-    color: #4928c0;
+    color: #F2E2B1;
 }
 
 .title {
@@ -154,6 +154,37 @@ p {
     color: #000;
 }
 
+.about {
+    background-color: #000;
+    margin: 0;
+    display: block;
+    margin-bottom: -70px;
+
+}
+
+.about h3 {
+    color: #fff;
+}
+
+.about p {
+    color: #fff;
+}
+
+.work {
+    background-color: #F6F0F0;
+    margin: 0;
+    display: block;
+    margin-bottom: -70px;
+}
+
+.contact {
+    background-color: #F2E2B1;
+    margin: 0;
+    display: block;
+    margin-bottom: -70px;
+
+}
+
 .grid-container {
     display: grid;
     grid-template-columns: auto auto auto;
@@ -166,31 +197,31 @@ p {
 }
 
 .grid-container>div {
-    background-color: #fff;
     border-radius: 10pt;
     padding: 20px;
-    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
 }
 
 .project-image {
     border-radius: 50px;
     width: 80%;
+    max-width: 300px;
     margin-top: 20px;
     margin-left: 10%;
     margin-right: 10%;
 }
 
-.slill-box {
-    display: flexbox;
-}
-
-.skills {
-    display: flex;
+.skill {
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    gap: 10%;
+    place-content: center;
+    width: 100%;
 }
 
 .skill-image {
-    width: 100px;
-    height: 100px;
+    width: 50px;
+    height: 50px;
+    margin: 15pt;
 }
 
 iframe {
@@ -198,25 +229,51 @@ iframe {
 }
 
 .item1 {
+    grid-row: 1 / span 2;
     grid-column: 1 / span 2;
+
 }
 
 .item2 {
     grid-column: 3;
+
+}
+
+.item3 {
+    grid-column: 3;
+
+}
+
+.item4 {
     grid-row: 1 / span 2;
+    grid-column: 1 / span 2;
 }
 
 .item5 {
-    grid-column: 1 / span 3;
+    grid-column: 3;
 }
 
+.item6 {
+    grid-column: 3;
+}
+
+.item7 {
+    grid-column: 1;
+    height: 400pt;
+}
+
+.item8 {
+    grid-column: 2 / span 2;
+}
+
+
 footer {
-    height: 80pt;
+    height: 50pt;
     background-color: #000;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 60%;
+    width: 100%;
     margin: auto;
 }
 
@@ -272,9 +329,5 @@ footer>a {
         top: 0;
         width: 300px;
         height: 300px;
-    }
-
-    footer {
-        width: 100%;
     }
 }
