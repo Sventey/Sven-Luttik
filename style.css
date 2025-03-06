@@ -308,6 +308,10 @@ footer>a {
         margin-top: 30%;
     }
 
+    .logo {
+        height: 200px;
+    }
+
     .grid-container {
         display: flex;
         flex-direction: column;
@@ -334,13 +338,13 @@ footer>a {
 
     h1 {
         font-size: 25pt;
-        width: 80%;
+        width: 90%;
         text-align: center;
     }
 
     h2 {
         font-size: 12pt;
-        width: 80%;
+        width: 90%;
         text-align: center;
     }
 
