@@ -111,10 +111,14 @@ li a:hover {
 .title {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     height: 100vh;
+    margin-top: 10%;
 
+}
+
+.logo {
+    width: 300px;
 }
 
 h1 {
@@ -226,6 +230,7 @@ p {
 
 iframe {
     float: right;
+    width: 100%;
 }
 
 .item1 {
@@ -259,7 +264,6 @@ iframe {
 
 .item7 {
     grid-column: 1;
-    height: 400pt;
 }
 
 .item8 {
@@ -282,10 +286,26 @@ footer>a {
 
 }
 
+
+@media only screen and (max-width: 1450px) {
+
+    h1 {
+        font-size: 40pt;
+        width: 80%;
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 16pt;
+        width: 80%;
+        text-align: center;
+    }
+}
+
 @media only screen and (max-width: 900px) {
 
-    .logo-bg {
-        display: none;
+    .title {
+        margin-top: 30%;
     }
 
     .grid-container {
@@ -315,19 +335,16 @@ footer>a {
     h1 {
         font-size: 25pt;
         width: 80%;
+        text-align: center;
     }
 
     h2 {
         font-size: 12pt;
         width: 80%;
+        text-align: center;
     }
 
     iframe {
-        display: flex;
-        position: relative;
-        left: 0;
-        top: 0;
-        width: 300px;
         height: 300px;
     }
 }
