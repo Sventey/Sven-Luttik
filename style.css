@@ -52,6 +52,10 @@ html {
 .background-image {
     position: fixed;
     z-index: -20;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
 }
 
 .primary-header {
@@ -65,8 +69,9 @@ html {
     top: 0;
     height: 70pt;
     z-index: 10;
+    font-size: 16pt;
 
-    transition: background-color 300ms;
+    transition: background-color 500ms;
     transition: 300ms;
 }
 
@@ -74,6 +79,7 @@ html {
     --_bg: #000;
     --_nav-link-color: #fff;
     height: 40pt;
+    font-size: 14pt;
 }
 
 .nav-list {
@@ -133,8 +139,7 @@ h2 {
     font-size: 20pt;
     letter-spacing: 5pt;
     color: #fff;
-    background-color: #000;
-    text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.3);
+    text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.5);
 }
 
 .grid-container {
@@ -191,6 +196,11 @@ footer>a {
 }
 
 @media only screen and (max-width: 1400px) {
+
+    .logo-bg {
+        width: 80%;
+    }
+
     .grid-container {
         display: flex;
         flex-direction: column;
@@ -206,11 +216,12 @@ footer>a {
     }
 
     h1 {
-        font-size: 20pt;
+        font-size: 35pt;
     }
 
     h2 {
         font-size: 12pt;
+        width: 80%;
     }
 
     footer {
