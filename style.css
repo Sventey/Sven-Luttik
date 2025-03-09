@@ -206,11 +206,9 @@ p {
 }
 
 .project-image {
-    border-radius: 50px;
-    width: 200px;
+    border-radius: 20px;
+    width: 150px;
     margin-top: 20px;
-    margin-left: 10%;
-    margin-right: 10%;
 }
 
 .skill {
@@ -251,6 +249,7 @@ iframe {
 .item4 {
     grid-row: 1 / span 2;
     grid-column: 1 / span 2;
+
 }
 
 .item5 {
