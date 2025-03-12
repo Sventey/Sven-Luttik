@@ -45,10 +45,6 @@
     margin: 0;
 }
 
-html {
-    background: rgb(0, 0, 0);
-}
-
 .background-image {
     position: fixed;
     z-index: -20;
@@ -184,7 +180,6 @@ p {
     background-color: #F6F0F0;
     margin: 0;
     display: block;
-    margin-bottom: -70px;
 }
 
 .contact {
@@ -203,7 +198,16 @@ p {
     width: 60%;
     margin: auto;
     margin-bottom: 50pt;
+}
 
+.grid-container-project {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 30px;
+    padding: 10px;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 50pt;
 }
 
 .grid-container>div {
@@ -217,10 +221,14 @@ p {
     margin-bottom: 20px;
 }
 
-.project-image {
+.project-image-large {
+    border-radius: 20px;
+    width: 100%;
+}
+
+.project-image-small {
     border-radius: 20px;
     width: 30%;
-    margin-top: 20px;
 }
 
 .skill {
@@ -291,6 +299,33 @@ footer>a {
 
 }
 
+.project-cell{
+    width: 90%;
+    height: 500px;
+}
+
+.flickity-button {
+    background: #000 !important;
+    color: #fff !important;
+}
+
+.flickity-button:hover {
+    background: #F2E2B1 !important;
+    color: #000 !important;
+}
+
+.flickity-page-dots {
+    position: relative !important;
+    width: 150px !important;
+    margin: auto !important;
+    top: -25px !important;
+}
+
+iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
 
 @media only screen and (max-width: 1450px) {
 
