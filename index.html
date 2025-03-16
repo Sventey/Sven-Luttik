@@ -21,10 +21,10 @@
         <div class="wrapper">
             <div class="primary-header__inner">
                 <ul class="nav-list">
-                    <li><a href="">Home</a></li>
-                    <li><a href="">Projects</a></li>
-                    <li><a href="">About Me</a></li>
-                    <li><a href="">Resume</a></li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#work">Projects</a></li>
+                    <li><a href="#">Resume</a></li>
                 </ul>
             </div>
         </div>
@@ -41,6 +41,7 @@
         <div class="about">
             <div class="grid-container">
                 <div class="item1">
+                    <a id="about" class="anchor"></a>
                     <h3>About Me</h3><br><br>
                     <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                         labore
@@ -65,7 +66,7 @@
                                 src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg" />
                             <img class="skill-image"
                                 src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/640px-JavaScript-logo.png" />
-                            <img class="skill-image" src="https://cdn.worldvectorlogo.com/logos/react-native-1.svg" />
+                            <img class="skill-image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1200px-React-icon.svg.png" />
                             <img class="skill-image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/WordPress_blue_logo.svg/1024px-WordPress_blue_logo.svg.png" />
                             <img class="skill-image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Figma-logo.svg/1200px-Figma-logo.svg.png" />
                             <img class="skill-image"
@@ -82,19 +83,37 @@
                     <h3>Resume</h3> <br>
                     <i class="material-icons" style="font-size:48px;color:#fff;">file_download</i>
                 </div>
+                <a id="work" class="anchor"></a>
             </div>
         </div>
 
-        <div class="work">
+        <div id="work" class="work">
             <div class="grid-container">
                 <h3>Projects</h3>
             </div>
-            <div class="gallery js-flickity" data-flickity-options='{ "wrapAround": true }'>
-                <div class="project-cell"><iframe src="projects/txgnexus.html"></iframe></div>
-                <div class="project-cell"><iframe src="projects/buroschoute.html"></iframe></div>
-                <div class="project-cell"><iframe src="projects/test.html"></iframe></div>
 
-            </div>
+
+
+<div class="slider">
+    <input type="radio" name="slider" title="slide1" checked="checked" class="slider__nav"/>
+    <input type="radio" name="slider" title="slide2" class="slider__nav"/>
+    <input type="radio" name="slider" title="slide3" class="slider__nav"/>
+    <input type="radio" name="slider" title="slide4" class="slider__nav"/>
+    <div class="slider__inner">
+      <div class="slider__contents"><i class="slider__image"></i>
+        <div class="project-cell"><iframe src="projects/txgnexus.html"></iframe></div>
+    </div>
+    <div class="slider__contents"><i class="slider__image"></i>
+        <div class="project-cell"><iframe src="projects/buroschoute.html"></iframe></div>
+    </div>
+    <div class="slider__contents"><i class="slider__image"></i>
+        <div class="project-cell"><iframe src="projects/test.html"></iframe></div>
+    </div>
+    <div class="slider__contents"><i class="slider__image"></i>
+        <div class="project-cell"><iframe src="projects/test.html"></iframe></div>
+    </div>
+    </div>
+  </div>
         </div>
 
         <div class="contact">
